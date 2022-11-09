@@ -1,0 +1,201 @@
+timestamp,message
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.383 [main] PlatformBatchRunner - Arg at 4 is --cls.batch.run.id=8012
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.383 [main] PlatformBatchRunner - batchJobRunDBOperations is com.cls.platform.repository.operations.BatchJobRunDBOperations@7809b43a
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.383 [main] PlatformBatchRunner - batchJobExecutor is com.cls.platform.batch.BatchJobExecutor@7c048b30
+1.66684E+12,[INFO ] 2022-10-27 04:03:25.383 [main] PlatformBatchRunner - Running batchJob with Param ID 8012
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.462 [main] BatchJobExecutor - Executing spring batch job {""id"":8012,""createDate"":1666843200730,""startDate"":null,""endDate"":null,""status"":""WAITING TO START"",""executionId"":null,""scheduledRun"":false,""exitStatus"":null,""timeToComplete"":null,""numberOfRecords"":0,""finalProcessedRecordCount"":0,""awsBatchId"":""4255e580-4a90-4489-8fdc-537bb8954436"",""sequenceInChainRun"":3}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.463 [main] BatchJobExecutor - Executing batch job DSDJ - MPMS- 03_LoanRescheduleDynamicJob1 for lfsTenan100-lfsEnvironment100
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.533 [main] BatchJobOrchestrator - *** Register Batch Job, salesforceBatchJobRun with name DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.535 [main] BatchJobOrchestrator - *** salesforceBatchJobExecuteStep, chunk size 40 and pool size 50"
+1.66684E+12,"[INFO ] 2022-10-27 04:03:25.615 [main] SimpleJobLauncher - Job: [SimpleJob: [name=DSDJ - MPMS- 03_LoanRescheduleDynamicJob1]] launched with the following parameters: [{tenant=lfsTenan100, batchJobName=DSDJ - MPMS- 03_LoanRescheduleDynamicJob1, batchJobStartDate=1666843200730, batchJobRunId=8012, env=lfsEnvironment100}]"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.654 [main] BatchJobListener - In beforeJob for BatchJobListener
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.656 [main] BatchJobListener - Batch Job Parameters :: {""tenantName"":""lfsTenan100"",""tenantEnvironmentName"":""lfsEnvironment100"",""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobStartDate"":null}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.665 [main] BatchJobListener - Running batch job with id 8012
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.667 [main] BatchJobListener - Batch job run in before job is {""id"":8012,""createDate"":1666843200730,""startDate"":null,""endDate"":null,""status"":""WAITING TO START"",""executionId"":null,""scheduledRun"":false,""exitStatus"":null,""timeToComplete"":null,""numberOfRecords"":0,""finalProcessedRecordCount"":0,""awsBatchId"":""4255e580-4a90-4489-8fdc-537bb8954436"",""sequenceInChainRun"":3}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.738 [main] BatchJobListener - Batch job in BatchJobListener is {""id"":2024,""name"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""queryAPI"":""/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/query"",""startAPI"":""/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/start"",""handlerAPI"":""/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/execute"",""finishAPI"":""/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/finish"",""runStatsAPI"":""/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/runstats"",""chunkSize"":40,""poolSize"":50,""activeJob"":true,""scheduledToRun"":false,""sequenceInChain"":3,""parentJobNames"":""DSDJ - MPMS- 03_StartOfDayDynamicJob""}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.748 [main] BatchJobListener - Tenant environment in BatchJobDataReader is {""id"":510,""tenant"":{""id"":361,""name"":""lfsTenan100"",""activeTenant"":true},""name"":""lfsEnvironment100"",""loginDomain"":""https://test.salesforce.com"",""activeEnvironment"":true,""apiKeyValidityPeriod"":""6M"",""apiKeyExpiryDate"":1679529600000,""environment"":{""id"":510,""name"":""lfsEnvironment100"",""loginDomain"":""https://test.salesforce.com"",""apiKeyValidityPeriod"":""6M"",""apiKeyExpiryDate"":1679529600000,""activeEnvironment"":true}}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:25.750 [main] SalesforceLoginService - Logging in with {""loginDomain"":""https://test.salesforce.com""}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:25.755 [main] SalesforceLoginService - REST Login Endpoint is https://test.salesforce.com/services/oauth2/token
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:27.163 [main] BatchJobRunStatsPublisher - In publishBatchJobRunCreated, connection attributes are {""loginDomain"":""https://test.salesforce.com""}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:27.164 [main] BatchJobRunDBOperations - Running status for batch job run for DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,[DEBUG] 2022-10-27 04:03:27.192 [main] BatchJobChunkStatDBOperations - Number of records processed 0
+1.66684E+12,[DEBUG] 2022-10-27 04:03:27.197 [main] BatchJobRunDBOperations - Status message in getRunningStatus is RUNNING
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:27.356 [main] ClsBatchRunJSONPayload - Data to be used in creating a batch job payload{""batchRuns"":[{""createDate"":1666843200730,""startDate"":null,""endDate"":null,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""RUNNING"",""status"":""STARTED"",""timeToComplete"":0,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:27.356 [main] SalesforceRestAPIExecutor - SalesforceRestAPIExecutor: Executing batch runStat https://sympleloans--fullcopy.sandbox.my.salesforce.com/services/apexrest/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/runstats on {""batchRuns"":[{""createDate"":1666843200730,""startDate"":null,""endDate"":null,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""RUNNING"",""status"":""STARTED"",""timeToComplete"":0,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:27.359 [main] ClsBatchRunJSONPayload - Data to be used in creating a batch job payload{""batchRuns"":[{""createDate"":1666843200730,""startDate"":null,""endDate"":null,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""RUNNING"",""status"":""STARTED"",""timeToComplete"":0,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.111 [main] SalesforceRestAPIExecutor - Job Stats: Batch job step Salesforce-PublishRunStats-API success took 755 milliseconds to execute
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:28.113 [main] BatchJobRunStatsPublisher - SFDC RUNSTATS API Response :: {""status"":""SUCCESS"",""rowNumber"":null,""response"":[],""query_id"":null,""errorNumber"":0,""errorMessage"":null,""errorCode"":""NO_ERROR"",""content"":[],""additionalInfo"":null}"
+1.66684E+12,[INFO ] 2022-10-27 04:03:28.139 [main] SimpleStepHandler - Executing step: [salesforceBatchJobPublishStartedStatusStep]
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.147 [main] BatchJobStepListener - StepExecutionListener - beforeStep salesforceBatchJobPublishStartedStatusStep
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.157 [main] BatchJobPublishStartStatusTasklet - In BatchJobPublishStartStatusTasklet execute
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.213 [main] BatchJobPublishStartStatusTasklet - Running batch job with id 8012
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.225 [main] BatchJobPublishStartStatusTasklet - Publish start status execution for DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:28.226 [main] BatchJobRunStatsPublisher - In publishBatchJobRunStarted, connection attributes are {""loginDomain"":""https://test.salesforce.com""}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.227 [main] BatchJobRunDBOperations - Running status for batch job run for DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.229 [main] BatchJobChunkStatDBOperations - Number of records processed 0
+1.66684E+12,[DEBUG] 2022-10-27 04:03:28.231 [main] BatchJobRunDBOperations - Status message in getRunningStatus is RUNNING
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:28.237 [main] ClsBatchRunJSONPayload - Data to be used in creating a batch job payload{""batchRuns"":[{""createDate"":1666843200730,""startDate"":1666843408225,""endDate"":null,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""RUNNING"",""status"":""STARTED"",""timeToComplete"":0,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:28.237 [main] SalesforceRestAPIExecutor - SalesforceRestAPIExecutor: Executing batch runStat https://sympleloans--fullcopy.sandbox.my.salesforce.com/services/apexrest/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/runstats on {""batchRuns"":[{""createDate"":1666843200730,""startDate"":1666843408225,""endDate"":null,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""RUNNING"",""status"":""STARTED"",""timeToComplete"":0,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:28.240 [main] ClsBatchRunJSONPayload - Data to be used in creating a batch job payload{""batchRuns"":[{""createDate"":1666843200730,""startDate"":1666843408225,""endDate"":null,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""RUNNING"",""status"":""STARTED"",""timeToComplete"":0,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:29.052 [main] SalesforceRestAPIExecutor - Job Stats: Batch job step Salesforce-PublishRunStats-API success took 815 milliseconds to execute
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:29.053 [main] BatchJobRunStatsPublisher - SFDC RUNSTATS API Response :: {""status"":""SUCCESS"",""rowNumber"":null,""response"":[],""query_id"":null,""errorNumber"":0,""errorMessage"":null,""errorCode"":""NO_ERROR"",""content"":[],""additionalInfo"":null}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:29.063 [main] BatchJobStepListener - StepExecutionListener - afterStep salesforceBatchJobPublishStartedStatusStep 916 ms
+1.66684E+12,[INFO ] 2022-10-27 04:03:29.072 [main] AbstractStep - Step: [salesforceBatchJobPublishStartedStatusStep] executed in 932ms
+1.66684E+12,[INFO ] 2022-10-27 04:03:29.100 [main] SimpleStepHandler - Executing step: [salesforceBatchJobStartStep]
+1.66684E+12,[DEBUG] 2022-10-27 04:03:29.106 [main] BatchJobStepListener - StepExecutionListener - beforeStep salesforceBatchJobStartStep
+1.66684E+12,[DEBUG] 2022-10-27 04:03:29.111 [main] BatchJobStartTasklet - In BatchJobStartTasklet Step
+1.66684E+12,[DEBUG] 2022-10-27 04:03:29.120 [main] SalesforceRestAPIExecutor - SalesforceRestAPIExecutor: Executing batch start rest  https://sympleloans--fullcopy.sandbox.my.salesforce.com/services/apexrest/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/start
+1.66684E+12,[DEBUG] 2022-10-27 04:03:37.888 [main] SalesforceRestAPIExecutor - Job Stats: Batch job step Salesforce-Start-API success took 8768 milliseconds to execute
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:37.889 [main] BatchJobStartTasklet - SFDC START API Response :: {""status"":""SUCCESS"",""rowNumber"":null,""response"":[],""query_id"":null,""errorNumber"":0,""errorMessage"":null,""errorCode"":""NO_ERROR"",""content"":[],""additionalInfo"":null}"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:37.891 [main] BatchJobStartTasklet - Job Stats: Batch job step Spring-Start-Tasklet success took 8780 milliseconds to execute
+1.66684E+12,[DEBUG] 2022-10-27 04:03:37.899 [main] BatchJobStepListener - StepExecutionListener - afterStep salesforceBatchJobStartStep 8793 ms
+1.66684E+12,[INFO ] 2022-10-27 04:03:37.904 [main] AbstractStep - Step: [salesforceBatchJobStartStep] executed in 8s803ms
+1.66684E+12,[INFO ] 2022-10-27 04:03:37.928 [main] SimpleStepHandler - Executing step: [salesforceBatchJobQueryDataStep]
+1.66684E+12,[DEBUG] 2022-10-27 04:03:37.934 [main] BatchJobStepListener - StepExecutionListener - beforeStep salesforceBatchJobQueryDataStep
+1.66684E+12,"[DEBUG] 2022-10-27 04:03:37.941 [main] SalesforceJobDataGenerator - Creating CSV file  for environment, batch job DSDJ - MPMS- 03_LoanRescheduleDynamicJob1, file name is salesforce_data_8012.csv"
+1.66684E+12,[DEBUG] 2022-10-27 04:03:37.949 [main] SalesforceRestAPIExecutor - SalesforceRestAPIExecutor: Executing query REST https://sympleloans--fullcopy.sandbox.my.salesforce.com/services/apexrest/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/query
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.427 [main] SalesforceRestAPIExecutor - Job Stats: Batch job step Salesforce-Query-API errors took 30478 milliseconds to execute
+1.66684E+12,java.net.SocketTimeoutException: timeout
+1.66684E+12,"	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:143)"
+1.66684E+12,"	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:162)"
+1.66684E+12,"	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:340)"
+1.66684E+12,"	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:449)"
+1.66684E+12,"	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:333)"
+1.66684E+12,"	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)"
+1.66684E+12,"	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)"
+1.66684E+12,"	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)"
+1.66684E+12,"	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)"
+1.66684E+12,"	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)"
+1.66684E+12,"	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)"
+1.66684E+12,"	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)"
+1.66684E+12,"	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:96)"
+1.66684E+12,"	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)"
+1.66684E+12,"	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)"
+1.66684E+12,"	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)"
+1.66684E+12,"	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)"
+1.66684E+12,"	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)"
+1.66684E+12,"	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:197)"
+1.66684E+12,"	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:148)"
+1.66684E+12,"	at com.cls.platform.batch.salesforce.SalesforceRestAPIExecutor.invokeQueryRestAPI(SalesforceRestAPIExecutor.java:156)"
+1.66684E+12,"	at com.cls.platform.batch.salesforce.SalesforceJobDataGenerator.createCSVFile(SalesforceJobDataGenerator.java:58)"
+1.66684E+12,"	at com.cls.platform.batch.BatchJobQueryDataTasklet.execute(BatchJobQueryDataTasklet.java:60)"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407)"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331)"
+1.66684E+12,"	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273)"
+1.66684E+12,"	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)"
+1.66684E+12,"	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375)"
+1.66684E+12,"	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)"
+1.66684E+12,"	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145)"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258)"
+1.66684E+12,"	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208)"
+1.66684E+12,"	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152)"
+1.66684E+12,"	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:413)"
+1.66684E+12,"	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136)"
+1.66684E+12,"	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320)"
+1.66684E+12,"	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149)"
+1.66684E+12,"	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)"
+1.66684E+12,"	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140)"
+1.66684E+12,"	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)"
+1.66684E+12,"	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)"
+1.66684E+12,"	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)"
+1.66684E+12,"	at java.lang.reflect.Method.invoke(Method.java:498)"
+1.66684E+12,"	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)"
+1.66684E+12,"	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)"
+1.66684E+12,"	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)"
+1.66684E+12,"	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128)"
+1.66684E+12,"	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)"
+1.66684E+12,"	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)"
+1.66684E+12,"	at com.sun.proxy.$Proxy144.run(Unknown Source)"
+1.66684E+12,"	at com.cls.platform.batch.BatchJobExecutor.executeSpringBatchJob(BatchJobExecutor.java:127)"
+1.66684E+12,"	at com.cls.platform.PlatformBatchRunner.run(PlatformBatchRunner.java:59)"
+1.66684E+12,"	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)"
+1.66684E+12,"	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)"
+1.66684E+12,"	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)"
+1.66684E+12,"	at com.cls.platform.PlatformApplication.main(PlatformApplication.java:96)"
+1.66684E+12,Caused by: javax.net.ssl.SSLException: Socket closed
+1.66684E+12,"	at sun.security.ssl.Alert.createSSLException(Alert.java:127)"
+1.66684E+12,"	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324)"
+1.66684E+12,"	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267)"
+1.66684E+12,"	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketImpl.handleException(SSLSocketImpl.java:1303)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:72)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:831)"
+1.66684E+12,"	at okio.InputStreamSource.read(JvmOkio.kt:90)"
+1.66684E+12,"	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:129)"
+1.66684E+12,"	... 54 more"
+1.66684E+12,Caused by: java.net.SocketException: Socket closed
+1.66684E+12,"	at java.net.SocketInputStream.read(SocketInputStream.java:204)"
+1.66684E+12,"	at java.net.SocketInputStream.read(SocketInputStream.java:141)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:457)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1095)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketImpl.access$200(SSLSocketImpl.java:72)"
+1.66684E+12,"	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:815)"
+1.66684E+12,"	... 56 more"
+1.66684E+12,[ERROR] 2022-10-27 04:04:08.435 [main] AbstractStep - Encountered an error executing step salesforceBatchJobQueryDataStep in job DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,com.cls.platform.exception.PlatformException: exception.create.csv.failed
+1.66684E+12,"	at com.cls.platform.batch.BatchJobQueryDataTasklet.execute(BatchJobQueryDataTasklet.java:76) ~[classes/:?]"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:413) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_275]"
+1.66684E+12,"	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_275]"
+1.66684E+12,"	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_275]"
+1.66684E+12,"	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_275]"
+1.66684E+12,"	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128) [spring-batch-core-4.3.5.jar:4.3.5]"
+1.66684E+12,"	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) [spring-aop-5.3.18.jar:5.3.18]"
+1.66684E+12,"	at com.sun.proxy.$Proxy144.run(Unknown Source) [?:?]"
+1.66684E+12,"	at com.cls.platform.batch.BatchJobExecutor.executeSpringBatchJob(BatchJobExecutor.java:127) [classes/:?]"
+1.66684E+12,"	at com.cls.platform.PlatformBatchRunner.run(PlatformBatchRunner.java:59) [classes/:?]"
+1.66684E+12,"	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777) [spring-boot-2.6.6.jar:2.6.6]"
+1.66684E+12,"	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761) [spring-boot-2.6.6.jar:2.6.6]"
+1.66684E+12,"	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) [spring-boot-2.6.6.jar:2.6.6]"
+1.66684E+12,"	at com.cls.platform.PlatformApplication.main(PlatformApplication.java:96) [classes/:?]"
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.441 [main] BatchJobStepListener - StepExecutionListener - afterStep salesforceBatchJobQueryDataStep 30507 ms
+1.66684E+12,[INFO ] 2022-10-27 04:04:08.447 [main] AbstractStep - Step: [salesforceBatchJobQueryDataStep] executed in 30s518ms
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.464 [main] BatchJobListener - Running batch job with id 8012
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.473 [main] BatchJobListener - After job execution for DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.486 [main] BatchJobRunDBOperations - Running status for batch job run for DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.487 [main] BatchJobChunkStatDBOperations - Number of records processed 0
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.488 [main] BatchJobRunDBOperations - Status message in getRunningStatus is RUNNING
+1.66684E+12,"[DEBUG] 2022-10-27 04:04:08.489 [main] BatchJobRunStatsPublisher - In publishBatchJobRunCompleted, connection attributes are {""loginDomain"":""https://test.salesforce.com""}"
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.489 [main] BatchJobRunDBOperations - Running status for batch job run for DSDJ - MPMS- 03_LoanRescheduleDynamicJob1
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.491 [main] BatchJobChunkStatDBOperations - Number of records processed 0
+1.66684E+12,[DEBUG] 2022-10-27 04:04:08.492 [main] BatchJobRunDBOperations - Status message in getRunningStatus is RUNNING
+1.66684E+12,"[DEBUG] 2022-10-27 04:04:08.496 [main] ClsBatchRunJSONPayload - Data to be used in creating a batch job payload{""batchRuns"":[{""createDate"":1666843200730,""startDate"":1666843408225,""endDate"":1666843448473,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""SUCCESS"",""status"":""STARTED"",""timeToComplete"":40,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:04:08.496 [main] SalesforceRestAPIExecutor - SalesforceRestAPIExecutor: Executing batch runStat https://sympleloans--fullcopy.sandbox.my.salesforce.com/services/apexrest/clcommon/v1/dag/DSDJ - MPMS- 03/job/LoanRescheduleDynamicJob1/runstats on {""batchRuns"":[{""createDate"":1666843200730,""startDate"":1666843408225,""endDate"":1666843448473,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""SUCCESS"",""status"":""STARTED"",""timeToComplete"":40,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,"[DEBUG] 2022-10-27 04:04:08.498 [main] ClsBatchRunJSONPayload - Data to be used in creating a batch job payload{""batchRuns"":[{""createDate"":1666843200730,""startDate"":1666843408225,""endDate"":1666843448473,""batchJobName"":""DSDJ - MPMS- 03_LoanRescheduleDynamicJob1"",""batchJobRunId"":8012,""batchJobChainRunId"":0,""statusMessage"":""SUCCESS"",""status"":""STARTED"",""timeToComplete"":40,""recordsProcessedProgress"":""0/0"",""errorRecordUUIds"":"""",""errorRecordCount"":0}]}"
+1.66684E+12,[DEBUG] 2022-10-27 04:04:09.360 [main] SalesforceRestAPIExecutor - Job Stats: Batch job step Salesforce-PublishRunStats-API success took 864 milliseconds to execute
+1.66684E+12,"[DEBUG] 2022-10-27 04:04:09.361 [main] BatchJobRunStatsPublisher - SFDC RUNSTATS API Response :: {""status"":""SUCCESS"",""rowNumber"":null,""response"":[],""query_id"":null,""errorNumber"":0,""errorMessage"":null,""errorCode"":""NO_ERROR"",""content"":[],""additionalInfo"":null}"
+1.66684E+12,"[INFO ] 2022-10-27 04:04:09.370 [main] SimpleJobLauncher - Job: [SimpleJob: [name=DSDJ - MPMS- 03_LoanRescheduleDynamicJob1]] completed with the following parameters: [{tenant=lfsTenan100, batchJobName=DSDJ - MPMS- 03_LoanRescheduleDynamicJob1, batchJobStartDate=1666843200730, batchJobRunId=8012, env=lfsEnvironment100}] and the following status: [FAILED] in 42s812ms"
+1.66684E+12,[INFO ] 2022-10-27 04:04:09.371 [main] PlatformApplication - 
+1.66684E+12,"'""----------------------------------------------------------"""
+1.66684E+12,"	Clound Lending Application 'Cloud Lending' is running with [dev, aws, batch] !:"
+1.66684E+12,"	"
+1.66684E+12,"'""----------------------------------------------------------"""
+1.66684E+12,[INFO ] 2022-10-27 04:04:09.372 [main] PlatformApplication - 
+1.66684E+12,"'""----------------------------------------------------------"""
+1.66684E+12,"	Application Completed!:"
+1.66684E+12,"	"
+1.66684E+12,"'""----------------------------------------------------------"""
+1.66684E+12,[INFO ] 2022-10-27 04:04:09.376 [main] SchedulerFactoryBean - Shutting down Quartz Scheduler
+1.66684E+12,[INFO ] 2022-10-27 04:04:09.387 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
